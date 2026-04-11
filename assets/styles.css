@@ -1,0 +1,106 @@
+.bg-cream {
+  background-color: #fffdf0;
+}
+
+.bg-orange {
+  background-color: #ff3737;
+}
+
+.bg-orange-50 {
+  background-color: #ff8383;
+}
+
+.bg-blue {
+  background-color: #89d4ff;
+}
+
+.bg-gold {
+  background-color: #ffc300;
+}
+
+.bg-grey {
+  background-color: #f9f8f6;
+}
+
+.text-gold {
+  color: #ffd400;
+}
+
+.big-font {
+  font-size: 4rem;
+}
+
+.hero-section {
+  height: 100vh;
+}
+
+.features-section {
+  height: auto;
+}
+
+.card {
+  width: 400px;
+  height: 460px;
+}
+
+.fredoka-font-bold {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.fredoka-font-medium {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.fredoka-font {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@media (width <= 48rem) {
+  .big-font {
+    font-size: 2.8rem;
+  }
+
+  .hero-section {
+    height: auto;
+  }
+
+  .features-section {
+    height: auto;
+  }
+
+  .card {
+    width: 280px;
+    height: 350px;
+  }
+}
+
+@media (width <= 64rem) {
+  .big-font {
+    font-size: 2.8rem;
+  }
+
+  .hero-section {
+    height: auto;
+  }
+
+  .features-section {
+    height: auto;
+  }
+
+  .card {
+    width: 280px;
+    height: 350px;
+  }
+}
