@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .bg-cream {
   background-color: #fffdf0;
 }
@@ -43,6 +47,32 @@
   height: 460px;
 }
 
+.btn-active {
+  background-color: #ffffff;
+  border: 2px solid #ffc300;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+}
+
+.btn-active:hover {
+  background-color: #ebebeb;
+}
+
+.btn-unactive {
+  background-color: #ffc300;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-unactive:hover {
+  background-color: #ecb500;
+}
+
+.alert-main {
+  width: 25%;
+}
+
 .fredoka-font-bold {
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
@@ -84,6 +114,10 @@
     width: 280px;
     height: 350px;
   }
+
+  .alert-main {
+    width: 100%;
+  }
 }
 
 @media (width <= 64rem) {
@@ -101,6 +135,10 @@
 
   .card {
     width: 280px;
-    height: 350px;
+    height: 400px;
+  }
+
+  .alert-main {
+    width: 100%;
   }
 }

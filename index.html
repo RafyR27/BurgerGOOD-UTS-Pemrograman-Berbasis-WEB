@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BurgerGOOD</title>
+    <title>BurgerGOOD | Indonesia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +13,23 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="/public/logo.png">
   </head>
   <body class="bg-cream">
+    <!-- Alert -->
+    <div class="position-fixed z-3 alert-main end-0 top-0">
+      <div class="p-2">
+        <div
+          id="alert-mail"
+          class="alert alert-success d-none justify-content-center align-items-center gap-3"
+          role="alert"
+        >
+          <i class="bi bi-check-circle-fill"></i>
+          <p class="my-0">Message sent successfully!</p>
+        </div>
+      </div>
+    </div>
+
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid px-4 px-lg-5 py-2">
@@ -40,34 +55,38 @@
             class="navbar-nav mb-2 mb-lg-0 gap-2 gap-lg-5 px-3 px-lg-0 py-3 py-lg-0"
           >
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
           </ul>
           <div class="fredoka-font d-lg-none">
-            <button class="w-100 btn btn-dark btn-outline-light rounded-4 px-4">
-              Contact
-            </button>
+            <a href="#contact">
+              <button
+                class="w-100 btn btn-dark btn-outline-light rounded-4 px-4"
+              >
+                Contact
+              </button>
+            </a>
           </div>
         </div>
         <div class="d-none d-lg-block fredoka-font">
-          <button class="btn btn-dark btn-outline-light rounded-4 px-4">
-            Contact
-          </button>
+          <a href="#contact">
+            <button class="btn btn-dark btn-outline-light rounded-4 px-4">
+              Contact
+            </button>
+          </a>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section
+      id="home"
       class="hero-section w-100 px-4 px-lg-5 py-2 py-md-4 py-lg-0 d-flex justify-content-center align-items-center"
     >
       <div
@@ -157,6 +176,7 @@
 
     <!-- Features Section -->
     <section
+      id="features"
       class="features-section w-100 px-4 px-lg-5 d-flex flex-column justify-content-start align-items-start gap-4"
       style="padding: 60px 0 60px 0"
     >
@@ -243,6 +263,7 @@
 
     <!-- Pricing Section -->
     <section
+      id="menu"
       class="features-section w-100 px-4 px-lg-5 d-flex flex-column justify-content-start align-items-start gap-4"
       style="padding: 0 0 60px 0"
     >
@@ -254,14 +275,17 @@
         class="w-100 d-flex justify-content-lg-center align-items-lg-center gap-4 overflow-x-auto pb-3"
       >
         <div
-          class="card border-warning border-3 bg-grey rounded-3 flex-shrink-0 card d-flex justify-content-center align-items-center position-relative"
+          class="card border-warning border-3 bg-grey rounded-3 flex-shrink-0 card d-flex justify-content-center align-items-center position-relative menu-card"
         >
-          <p class="rounded-bottom-5 text-center fs-6 bg-gold text-light px-3 pb-2 fredoka-font position-absolute top-0">
+          <p
+            class="rounded-bottom-5 text-center fs-6 bg-gold text-light px-3 pb-2 fredoka-font position-absolute top-0"
+          >
             Today’s Favorite
           </p>
           <img
             src="public/Crispy-Chicken-Burger.png"
-            class="card-img object-fit-contain w-50 h-100 pb-5"
+            class="card-img object-fit-contain w-50 h-100"
+            style="padding: 0 0 120px 0"
             alt="Crispy Chicken Burger"
           />
           <div
@@ -270,16 +294,31 @@
             <h5 class="card-title fredoka-font-medium">
               Crispy Chicken Burger | BurgerGOOD
             </h5>
-            <p class="fredoka-font-medium">Rp. 25.000</p>
+            <div class="my-2 d-flex gap-2 fredoka-font">
+              <button
+                class="btn-active btn-small"
+                onclick="setPrice('small', 'Crispy Chicken Burger', this)"
+              >
+                Small
+              </button>
+              <button
+                class="btn-unactive btn-large"
+                onclick="setPrice('large', 'Crispy Chicken Burger', this)"
+              >
+                Large
+              </button>
+            </div>
+            <p class="fredoka-font-medium price fs-5">Rp. 25,000</p>
           </div>
         </div>
 
         <div
-          class="card border-0 bg-grey rounded-3 flex-shrink-0 card d-flex justify-content-center align-items-center"
+          class="card border-0 bg-grey rounded-3 flex-shrink-0 card d-flex justify-content-center align-items-center menu-card"
         >
           <img
             src="public/double-cheese-burger.png"
-            class="card-img object-fit-contain w-50 h-100 pb-5"
+            class="card-img object-fit-contain w-50 h-100"
+            style="padding: 0 0 120px 0"
             alt="double cheese burger"
           />
           <div
@@ -288,16 +327,31 @@
             <h5 class="card-title fredoka-font-medium">
               Double Cheese Burger | BurgerGOOD
             </h5>
-            <p class="fredoka-font-medium">Rp. 32.000</p>
+            <div class="my-2 d-flex gap-2 fredoka-font">
+              <button
+                class="btn-active btn-small"
+                onclick="setPrice('small', 'Double Cheese Burger', this)"
+              >
+                Small
+              </button>
+              <button
+                class="btn-unactive btn-large"
+                onclick="setPrice('large', 'Double Cheese Burger', this)"
+              >
+                Large
+              </button>
+            </div>
+            <p class="fredoka-font-medium price fs-5">Rp. 32,000</p>
           </div>
         </div>
 
         <div
-          class="card border-0 bg-grey rounded-3 flex-shrink-0 card d-flex justify-content-center align-items-center"
+          class="card border-0 bg-grey rounded-3 flex-shrink-0 card d-flex justify-content-center align-items-center menu-card"
         >
           <img
             src="public/mushroom-burger.png"
-            class="card-img object-fit-contain w-50 h-100 pb-5"
+            class="card-img object-fit-contain w-50 h-100"
+            style="padding: 0 0 120px 0"
             alt="Mushroom Burger"
           />
           <div
@@ -306,19 +360,103 @@
             <h5 class="card-title fredoka-font-medium">
               Mushroom Burger | BurgerGOOD
             </h5>
-            <p class="fredoka-font-medium">Rp. 23.000</p>
+            <div class="my-2 d-flex gap-2 fredoka-font">
+              <button
+                class="btn-active btn-small"
+                onclick="setPrice('small', 'Mushroom Burger', this)"
+              >
+                Small
+              </button>
+              <button
+                class="btn-unactive btn-large"
+                onclick="setPrice('large', 'Mushroom Burger', this)"
+              >
+                Large
+              </button>
+            </div>
+            <p class="fredoka-font-medium price fs-5">Rp. 23,000</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer Section -->
-    <section
-      class="w-100 px-4 px-lg-5 py-3 d-flex flex-column justify-content-start align-items-start gap-4 bg-orange"
-      style="height: 60vh"
+    <footer
+      id="contact"
+      class="bg-dark text-light py-5 px-4 px-lg-5 fredoka-font"
     >
-      <h2 class="fredoka-font-medium big-font text-light py-4">GET IN TOUCH</h2>
-    </section>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <h3 class="fredoka-font-bold" style="font-size: 2rem">
+              Get in Touch
+            </h3>
+            <p>
+              Hungry or have questions? Send us a message and we’ll get back to
+              you as soon as possible.
+            </p>
+            <p class="mb-1 d-flex gap-2 align-items-center">
+              <i class="bi bi-pin-map-fill"></i> Jakarta, Indonesia
+            </p>
+            <p class="mb-1 d-flex gap-2 align-items-center">
+              <i class="bi bi-telephone-fill"></i> +62 812-3456-7890
+            </p>
+            <p class="d-flex gap-2 align-items-center">
+              <i class="bi bi-envelope-at-fill"></i> burgergood@email.com
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <form onsubmit="sendMail()">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control rounded-3"
+                  placeholder="Enter your name"
+                />
+                <div class="invalid-feedback">Please fill your name!</div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  id="email"
+                  type="text"
+                  class="form-control rounded-3"
+                  placeholder="Enter your email"
+                />
+                <div id="validateEmail" class="invalid-feedback">
+                  Please fill your email!
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control rounded-3"
+                  rows="4"
+                  placeholder="Write your message..."
+                ></textarea>
+                <div class="invalid-feedback">Please fill your message!</div>
+              </div>
+
+              <button type="submit" class="btn bg-gold rounded-5 px-4">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 pt-3 border-top">
+          <p class="mb-0">&copy; 2026 BurgerGood. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
 
     <script src="assets/js/bootstrap.js"></script>
   </body>
