@@ -4,21 +4,21 @@ const products = [
     descripsi:
       "Crispy fried chicken with fresh lettuce and creamy sauce in a soft burger bun.",
     price: 25000,
-    image: "/public/Crispy-Chicken-Burger.png",
+    image: "public/Crispy-Chicken-Burger.png",
   },
   {
     name: "Double Cheese Burger",
     descripsi:
       "Crispy fried chicken with fresh lettuce and creamy sauce in a soft burger bun.",
     price: 32000,
-    image: "/public/double-cheese-burger.png",
+    image: "public/double-cheese-burger.png",
   },
   {
     name: "Mushroom Burger",
     descripsi:
       "Crispy fried chicken with fresh lettuce and creamy sauce in a soft burger bun.",
     price: 23000,
-    image: "/public/mushroom-burger.png",
+    image: "public/mushroom-burger.png",
   },
 ];
 
