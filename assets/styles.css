@@ -57,6 +57,11 @@
   border-radius: 10px;
 }
 
+.btn-unactive:focus {
+  border: 1px solid #ffc300;
+  background-color: #ffffff;
+}
+
 .btn-unactive:hover {
   background-color: #ebebeb;
 }
@@ -108,9 +113,21 @@
   height: auto;
 }
 
+.btn-unactive-menu {
+  background-color: #ffffff;
+  border: 1px solid #ffc300;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+}
+
+.btn-unactive-menu:focus {
+  border: 1px solid #ffc300;
+  background-color: #ffffff;
+}
+
 /* Menu */
 .hero-menu {
-  height: 40vh;
+  height: auto;
 }
 
 .bar-menu {
@@ -140,7 +157,7 @@
   }
 
   .hero-menu {
-    height: 30%;
+    height: 150px;
   }
 
   .bar-menu {
@@ -171,7 +188,7 @@
   }
 
   .hero-menu {
-    height: 30%;
+    height: 150px;
   }
 
   .bar-menu {
