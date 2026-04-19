@@ -113,18 +113,6 @@
   height: auto;
 }
 
-.btn-unactive-menu {
-  background-color: #ffffff;
-  border: 1px solid #ffc300;
-  padding: 5px 15px 5px 15px;
-  border-radius: 10px;
-}
-
-.btn-unactive-menu:focus {
-  border: 1px solid #ffc300;
-  background-color: #ffffff;
-}
-
 /* Menu */
 .hero-menu {
   height: auto;
@@ -133,6 +121,9 @@
 .bar-menu {
   width: 50%;
 }
+
+/* checkout */
+
 
 @media (width <= 48rem) {
   .big-font {
@@ -163,6 +154,8 @@
   .bar-menu {
     width: 100%;
   }
+
+
 }
 
 @media (width <= 64rem) {
@@ -194,4 +187,6 @@
   .bar-menu {
     width: 100%;
   }
+
+
 }

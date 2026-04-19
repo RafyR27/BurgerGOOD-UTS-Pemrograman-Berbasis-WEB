@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
               class="object-fit-contain"
               style="width: 100px"
             />
-            <div class="d-flex flex-column justify-content-center align-items-start gap-1">
+            <div class="w-100 d-flex flex-column justify-content-center align-items-start gap-1">
               <p class="fredoka-font-bold my-0 productName">${item.name}</p>
               <p class="fredoka-font my-0" style="font-size: 0.8rem">
                 ${item.descripsi}
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   >
                     <button
                       type="button"
-                      class="btn rounded-5 btn-unactive-menu"
+                      class="btn rounded-5 btn-unactive"
                       style="padding: 6px 9px"
                       onclick="delCountCard('${item.name}')"
                     >
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p class="my-0 quantity"></p>
                     <button
                       type="button"
-                      class="btn rounded-5 btn-unactive-menu"
+                      class="btn rounded-5 btn-unactive"
                       style="padding: 6px 9px"
                       onclick="addCountCard('${item.name}')"
                     >
@@ -239,8 +239,6 @@ const delCountCard = (name) => {
 
     updateCartDisplay();
   }
-
-  // console.log(addProduct);
 };
 
 const updateCartDisplay = () => {
