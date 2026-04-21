@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Kasir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link rel="icon" href="../public/logo.png" />
+  </head>
+  <body class="bg-cream">
+    <div class="w-100 p-4">
+      <button
+        class="btn btn-dark rounded-5"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        <i class="bi bi-list fs-5"></i>
+      </button>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start fredoka-font"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Kasir</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div
+        class="offcanvas-body px-4 d-flex flex-column justify-content-between"
+      >
+        <div class="d-flex flex-column gap-2 justify-content-start">
+          <a
+            href="/kasir/dashboard.html"
+            class="w-100 link-underline link-underline-opacity-0"
+          >
+            <button
+              class="w-100 btn btn-warning text-start px-4 py-3 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-archive-fill"></i>
+              Dashboard
+            </button>
+          </a>
+          <a
+            href="/kasir/finish.html"
+            class="w-100 link-underline link-underline-opacity-0"
+          >
+            <button
+              class="w-100 btn btn-light text-start px-4 py-3 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-calendar2-check"></i>
+              Finish
+            </button>
+          </a>
+        </div>
+        <button
+          class="w-100 btn btn-outline-danger text-start px-4 py-3 d-flex align-items-center gap-3"
+        >
+          <i class="bi bi-box-arrow-left"></i>
+          Logout
+        </button>
+      </div>
+    </div>
+
+    <div class="container py-4 pt-0">
+      <!-- Outlet code -->
+      <div class="d-flex justify-content-end mb-4">
+        <div class="bg-dark text-white px-4 py-2 rounded-4 fredoka-font-medium">
+          Outlet: BRG-1024
+        </div>
+      </div>
+
+      <!-- Order list -->
+      <div class="row g-4">
+        <!-- Order card -->
+        <div class="col-lg-4 col-md-6">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <!-- table number -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="fredoka-font-medium mb-0">Table 05</h4>
+              <span class="badge text-bg-warning px-3 py-2">Pending</span>
+            </div>
+
+            <!-- ordered items -->
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <div>
+                  <p class="mb-0 fredoka-font-medium">Cheese Burger</p>
+                  <small class="text-muted">Regular</small>
+                </div>
+                <span>x2</span>
+              </div>
+
+              <div class="d-flex justify-content-between mb-2">
+                <div>
+                  <p class="mb-0 fredoka-font-medium">French Fries</p>
+                  <small class="text-muted">Large</small>
+                </div>
+                <span>x1</span>
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="mb-0 fredoka-font-medium">Iced Tea</p>
+                  <small class="text-muted">Medium</small>
+                </div>
+                <span>x2</span>
+              </div>
+            </div>
+
+            <!-- finish button -->
+            <button class="btn btn-success w-100 rounded-3">
+              <i class="bi bi-check-circle me-2"></i>
+              Complete Order
+            </button>
+          </div>
+        </div>
+
+        <!-- Order card -->
+        <div class="col-lg-4 col-md-6">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="fredoka-font-medium mb-0">Table 08</h4>
+              <span class="badge text-bg-warning px-3 py-2">Pending</span>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <div>
+                  <p class="mb-0 fredoka-font-medium">Double Burger</p>
+                  <small class="text-muted">Large</small>
+                </div>
+                <span>x1</span>
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="mb-0 fredoka-font-medium">Cola</p>
+                  <small class="text-muted">Regular</small>
+                </div>
+                <span>x2</span>
+              </div>
+            </div>
+
+            <button class="btn btn-success w-100 rounded-3">
+              <i class="bi bi-check-circle me-2"></i>
+              Complete Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/bootstrap.js"></script>
+  </body>
+</html>

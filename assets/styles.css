@@ -122,8 +122,18 @@
   width: 50%;
 }
 
-/* checkout */
+/* auth */
+.login-section {
+  height: 100vh;
+}
 
+.logo-section {
+  height: 100vh;
+}
+
+.form-input {
+  width: 50%;
+}
 
 @media (width <= 48rem) {
   .big-font {
@@ -155,7 +165,17 @@
     width: 100%;
   }
 
+  .login-section {
+    height: auto;
+  }
 
+  .logo-section {
+    height: auto;
+  }
+
+  .form-input {
+    width: 100%;
+  }
 }
 
 @media (width <= 64rem) {
@@ -188,5 +208,15 @@
     width: 100%;
   }
 
+  .login-section {
+    height: 100vh;
+  }
 
+  .logo-section {
+    height: auto;
+  }
+
+  .form-input {
+    width: 100%;
+  }
 }

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | BurgerGOOD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="public/logo.png" />
+  </head>
+  <body class="bg-cream">
+    <div class="w-100 d-flex justify-content-center align-items-center">
+      <div
+        class="w-50 logo-section bg-dark d-none d-lg-flex justify-content-center align-items-center"
+      >
+        <img
+          src="public/logo.png"
+          alt="BurgerGOOD"
+          class="w-50 object-fit-cover"
+        />
+      </div>
+      <form
+        class="form-input login-section fredoka-font d-flex flex-column justify-content-center align-items-center px-5 position-relative"
+      >
+        <div
+          class="d-flex align-items-center position-absolute top-0 start-0 p-3 gap-2"
+        >
+          <img
+            src="public/logo.png"
+            alt="burgerGOOD"
+            class="object-fit-cover"
+            style="width: 50px"
+          />
+          <p class="my-0 fredoka-font-bold fs-5 text-danger">BurgerGOOD</p>
+        </div>
+        <h1 class="fredoka-font-medium">Login</h1>
+        <div class="mb-3 form-input">
+          <label for="exampleInputEmail1" class="form-label">Username</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" />
+        </div>
+        <div class="mb-3 form-input">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <button type="submit" class="btn btn-dark form-input">Login</button>
+        <a
+          href="index.html"
+          class="my-4 text-dark link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+          >Back to home</a
+        >
+      </form>
+    </div>
+
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+</html>
